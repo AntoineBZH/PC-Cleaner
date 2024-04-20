@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>PC_Cleaner</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resources\PC-Cleaner.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="PC-Cleaner.png" />
+    <None Remove="Resources\PC-Cleaner.ico" />
+    <None Remove="Resources\PC-Cleaner.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\PC-Cleaner.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="PC-Cleaner.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\PC-Cleaner.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
