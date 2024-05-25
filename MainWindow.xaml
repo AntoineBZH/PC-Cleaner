@@ -33,7 +33,7 @@
         <Image Height="48" Width="48" Source="/Resources/system-update.png" Margin="236,226,698,188" Grid.Row="1" IsHitTestVisible="False"/>
         <Button Content="&#xD;&#xA;HISTORIQUE" HorizontalAlignment="Left" Margin="534,8,0,0" VerticalAlignment="Top" Height="180" Width="400" BorderThickness="5,5,5,5" ClipToBounds="True" Background="#007791" BorderBrush="White" FontFamily="Arial" FontSize="26" Foreground="White" FontWeight="Bold" Grid.Row="1" Click="Button_History_Click"/>
         <Image Height="48" Width="48" Source="/Resources/history.png" Margin="702,33,234,381" Grid.Row="1" IsHitTestVisible="False"/>
-        <Button Content="&#xD;&#xA;SITE WEB" HorizontalAlignment="Left" Margin="534,201,0,0" VerticalAlignment="Top" Height="180" Width="400" BorderThickness="5,5,5,5" ClipToBounds="True" Background="#007791" BorderBrush="White" FontFamily="Arial" FontSize="26" Foreground="White" FontWeight="Bold" Grid.Row="1"/>
+        <Button Content="&#xD;&#xA;SITE WEB" HorizontalAlignment="Left" Margin="534,201,0,0" VerticalAlignment="Top" Height="180" Width="400" BorderThickness="5,5,5,5" ClipToBounds="True" Background="#007791" BorderBrush="White" FontFamily="Arial" FontSize="26" Foreground="White" FontWeight="Bold" Grid.Row="1" Click="Button_Web_Click"/>
         <Image Height="48" Width="48" Source="/Resources/website.png" Margin="702,226,234,188" Grid.Row="1" IsHitTestVisible="False"/>
 
 
