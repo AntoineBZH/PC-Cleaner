@@ -11,9 +11,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="broom.png" />
+    <None Remove="history.png" />
     <None Remove="PC-Cleaner.png" />
     <None Remove="Resources\PC-Cleaner.ico" />
     <None Remove="Resources\PC-Cleaner.png" />
+    <None Remove="system-update.png" />
+    <None Remove="website.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,12 +25,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="PC-Cleaner.png">
+    <Resource Include="Resources\broom.png" />
+    <Resource Include="Resources\history.png" />
+    <Resource Include="Resources\PC-Cleaner.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\PC-Cleaner.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\system-update.png" />
+    <Resource Include="Resources\website.png" />
   </ItemGroup>
 
 </Project>

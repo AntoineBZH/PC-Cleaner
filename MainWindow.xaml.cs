@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Diagnostics;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +20,31 @@ namespace PC_Cleaner
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_History_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("The feature is coming soon!", "History", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void Button_Update_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("The application is up-to-date!", "Update", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void Button_Web_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Process.Start(new ProcessStartInfo("https://github.com/AntoineBZH/PC-Cleaner")
+                {
+                    UseShellExecute = true
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occured while opening the web site: {ex.Message}", "Web site", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

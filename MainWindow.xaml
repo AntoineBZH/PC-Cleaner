@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:PC_Cleaner"
         mc:Ignorable="d"
         x:Name="Main"
-        Title="PC-Cleaner" Height="700" Width="1000" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/PC-Cleaner.png">
+        Title="PC-Cleaner" Height="700" Width="1000" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/Resources/PC-Cleaner.png">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="205*"/>
@@ -27,10 +27,14 @@
         <Button Content="ANALYSER" HorizontalAlignment="Left" Margin="698,58,0,0" VerticalAlignment="Top" Height="60" Width="244" BorderThickness="5,5,5,5" ClipToBounds="True" Background="#007791" BorderBrush="White" FontFamily="Arial" FontSize="26" Foreground="White" FontWeight="Bold"/>
 
         <!-- Content -->
-        <Button Content="NETTOYER" HorizontalAlignment="Left" Margin="69,8,0,0" VerticalAlignment="Top" Height="180" Width="400" BorderThickness="5,5,5,5" ClipToBounds="True" Background="#007791" BorderBrush="White" FontFamily="Arial" FontSize="26" Foreground="White" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="MISE A JOUR" HorizontalAlignment="Left" Margin="69,201,0,0" VerticalAlignment="Top" Height="180" Width="400" BorderThickness="5,5,5,5" ClipToBounds="True" Background="#007791" BorderBrush="White" FontFamily="Arial" FontSize="26" Foreground="White" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="HISTORIQUE" HorizontalAlignment="Left" Margin="534,8,0,0" VerticalAlignment="Top" Height="180" Width="400" BorderThickness="5,5,5,5" ClipToBounds="True" Background="#007791" BorderBrush="White" FontFamily="Arial" FontSize="26" Foreground="White" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="SITE WEB" HorizontalAlignment="Left" Margin="534,201,0,0" VerticalAlignment="Top" Height="180" Width="400" BorderThickness="5,5,5,5" ClipToBounds="True" Background="#007791" BorderBrush="White" FontFamily="Arial" FontSize="26" Foreground="White" FontWeight="Bold" Grid.Row="1"/>
+        <Button Content="&#xD;&#xA;NETTOYER" HorizontalAlignment="Left" Margin="69,8,0,0" VerticalAlignment="Top" Height="180" Width="400" BorderThickness="5,5,5,5" ClipToBounds="True" Background="#007791" BorderBrush="White" FontFamily="Arial" FontSize="26" Foreground="White" FontWeight="Bold" Grid.Row="1"/>
+        <Image Height="48" Width="48" Source="/Resources/broom.png" Margin="236,33,698,381" Grid.Row="1" IsHitTestVisible="False"/>
+        <Button Content="&#xD;&#xA;MISE A JOUR" HorizontalAlignment="Left" Margin="69,201,0,0" VerticalAlignment="Top" Height="180" Width="400" BorderThickness="5,5,5,5" ClipToBounds="True" Background="#007791" BorderBrush="White" FontFamily="Arial" FontSize="26" Foreground="White" FontWeight="Bold" Grid.Row="1" Click="Button_Update_Click"/>
+        <Image Height="48" Width="48" Source="/Resources/system-update.png" Margin="236,226,698,188" Grid.Row="1" IsHitTestVisible="False"/>
+        <Button Content="&#xD;&#xA;HISTORIQUE" HorizontalAlignment="Left" Margin="534,8,0,0" VerticalAlignment="Top" Height="180" Width="400" BorderThickness="5,5,5,5" ClipToBounds="True" Background="#007791" BorderBrush="White" FontFamily="Arial" FontSize="26" Foreground="White" FontWeight="Bold" Grid.Row="1" Click="Button_History_Click"/>
+        <Image Height="48" Width="48" Source="/Resources/history.png" Margin="702,33,234,381" Grid.Row="1" IsHitTestVisible="False"/>
+        <Button Content="&#xD;&#xA;SITE WEB" HorizontalAlignment="Left" Margin="534,201,0,0" VerticalAlignment="Top" Height="180" Width="400" BorderThickness="5,5,5,5" ClipToBounds="True" Background="#007791" BorderBrush="White" FontFamily="Arial" FontSize="26" Foreground="White" FontWeight="Bold" Grid.Row="1"/>
+        <Image Height="48" Width="48" Source="/Resources/website.png" Margin="702,226,234,188" Grid.Row="1" IsHitTestVisible="False"/>
 
 
         <!-- Footer -->
