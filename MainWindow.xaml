@@ -17,17 +17,17 @@
         <Rectangle HorizontalAlignment="Center" Height="175" Fill="#007791" Stroke="Black" VerticalAlignment="Top" Width="1000" StrokeThickness="0"/>
         <Rectangle HorizontalAlignment="Center" Height="11" Fill="#FFDDDEDE" Stroke="Black" VerticalAlignment="Top" Width="1000" Margin="0,175,0,0" StrokeThickness="0"/>
         <!-- Title -->
-        <Label Content="Analyse du PC nécessaire" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="100,16,0,0" Foreground="White" FontFamily="Arial" FontSize="40" FontWeight="Bold"/>
+        <Label x:Name="Prompt" Content="Analyse du PC nécessaire" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="100,16,0,0" Foreground="White" FontFamily="Arial" FontSize="40" FontWeight="Bold"/>
         <!-- Subtitles -->
         <Label Content="Espace à nettoyer :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="100,76,0,0" Foreground="White" FontFamily="Arial" FontSize="25" FontWeight="Bold"/>
         <Label Content="Dernière analyse :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="100,109,0,0" Foreground="White" FontFamily="Arial" FontSize="25" FontWeight="Bold"/>
         <!-- Values -->
         <Label x:Name="Date" Content="Jamais" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="376,109,0,0" Foreground="White" FontFamily="Arial" FontSize="25"/>
-        <Label x:Name="Space" Content="??? Mb" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="376,73,0,0" Foreground="White" FontFamily="Arial" FontSize="25"/>
-        <Button Content="ANALYSER" HorizontalAlignment="Left" Margin="698,58,0,0" VerticalAlignment="Top" Height="60" Width="244" BorderThickness="5,5,5,5" ClipToBounds="True" Background="#007791" BorderBrush="White" FontFamily="Arial" FontSize="26" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="Space" Content="??? MB" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="376,73,0,0" Foreground="White" FontFamily="Arial" FontSize="25"/>
+        <Button Content="ANALYSER" HorizontalAlignment="Left" Margin="698,58,0,0" VerticalAlignment="Top" Height="60" Width="244" BorderThickness="5,5,5,5" ClipToBounds="True" Background="#007791" BorderBrush="White" FontFamily="Arial" FontSize="26" Foreground="White" FontWeight="Bold" Click="Button_Analyze_Click"/>
 
         <!-- Content -->
-        <Button Content="&#xD;&#xA;NETTOYER" HorizontalAlignment="Left" Margin="69,8,0,0" VerticalAlignment="Top" Height="180" Width="400" BorderThickness="5,5,5,5" ClipToBounds="True" Background="#007791" BorderBrush="White" FontFamily="Arial" FontSize="26" Foreground="White" FontWeight="Bold" Grid.Row="1"/>
+        <Button x:Name="CleanButton" Content="&#xD;&#xA;NETTOYER" HorizontalAlignment="Left" Margin="69,8,0,0" VerticalAlignment="Top" Height="180" Width="400" BorderThickness="5,5,5,5" ClipToBounds="True" Background="#007791" BorderBrush="White" FontFamily="Arial" FontSize="26" Foreground="White" FontWeight="Bold" Grid.Row="1" Click="Button_Clean_Click"/>
         <Image Height="48" Width="48" Source="/Resources/broom.png" Margin="236,33,698,381" Grid.Row="1" IsHitTestVisible="False"/>
         <Button Content="&#xD;&#xA;MISE A JOUR" HorizontalAlignment="Left" Margin="69,201,0,0" VerticalAlignment="Top" Height="180" Width="400" BorderThickness="5,5,5,5" ClipToBounds="True" Background="#007791" BorderBrush="White" FontFamily="Arial" FontSize="26" Foreground="White" FontWeight="Bold" Grid.Row="1" Click="Button_Update_Click"/>
         <Image Height="48" Width="48" Source="/Resources/system-update.png" Margin="236,226,698,188" Grid.Row="1" IsHitTestVisible="False"/>
